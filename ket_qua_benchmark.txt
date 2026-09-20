@@ -1,0 +1,76 @@
+BENCHMARK — NGUYỄN ĐĂNG THỰC (2A202603014)
+Chiến lược: fixed (FixedSizeChunker 400/80)
+Embedding: gemini-embedding-001 | LLM: gemini-3.6-flash | top_k=3
+Chunks: 30 | Độ dài trung bình: 365.8 ký tự
+==============================================================================
+Q1: Trả sách quá hạn thì bị phạt bao nhiêu tiền?
+  Filter: None
+  Điểm: theo doc_id=2/2 · theo nội dung=2/2
+    [1] noi-quy-thu-vien (0.812): Quá hạn phải nộp phạt 1.000đ/cuốn/ngày. - Phạt 10.000 đ/trang nếu viết, vẽ vào tài liệu. -...
+    [2] quy-dinh-muon-tra-sinh-vien (0.808): ả hết tài liệu của học kỳ trước mới được mượn tài liệu cho học kỳ tiếp theo. (Ghi chú: Thờ...
+    [3] quy-dinh-muon-tra-can-bo-giang-vien (0.802): tiếp theo. (Ghi chú: Thời gian mượn lại tài liệu vừa trả cách nhau 7-10 ngày). ## 4. Quy đ...
+  Agent: Theo tài liệu được cung cấp, mức phạt tiền khi trả sách quá hạn quy định như sau: * Theo Nội quy thư viện: Phạt **1.000đ/cuốn/ngày** [1]. * Theo Quy định mượn trả tài liệu: Phạt **500đ/ngày/1 cuốn sách** (thời gian tính quá hạn bắt đầu từ thời điểm kết thúc học kỳ theo lịch học của Phòng Đào tạo) [2], [3]. *(Lưu ý: Ngữ cảnh được cung cấp không nêu rõ đối tượng áp dụng riêng biệt cho từng mức phạt).*
+------------------------------------------------------------------------------
+Q2: Sách mượn về nhà được gia hạn mấy lần, mỗi lần bao lâu?
+  Filter: None
+  Điểm: theo doc_id=2/2 · theo nội dung=2/2
+    [1] phuc-vu-muon-tra-tai-lieu (0.833): n), 2 cuốn không cùng tên sách. Thời gian mượn về nhà: 45 ngày. Số lần được gia hạn: 01 lầ...
+    [2] phuc-vu-muon-tra-tai-lieu (0.784): ủa tài liệụ; chọn và mang tài liệu ra quầy thủ thư để làm thủ tục ghi mượn. ## Mượn đọc tạ...
+    [3] quy-dinh-muon-tra-sinh-vien (0.777): ả hết tài liệu của học kỳ trước mới được mượn tài liệu cho học kỳ tiếp theo. (Ghi chú: Thờ...
+  Agent: Dựa trên tài liệu được cung cấp, sách mượn về nhà được gia hạn **01 lần** với thời gian là **45 ngày** [1].
+------------------------------------------------------------------------------
+Q3: Mỗi bạn đọc được mượn tối đa bao nhiêu tài liệu về nhà?
+  Filter: {'audience': 'student'}
+  Điểm: theo doc_id=2/2 · theo nội dung=2/2
+    [1] quy-dinh-muon-tra-sinh-vien (0.847): khi mượn. ## 2. Số lượng tài liệu được mượn ### 2.1 Tài liệu mượn về nhà – Đối với bạn đọc...
+    [2] quy-dinh-muon-tra-sinh-vien (0.818): # Quy định mượn - trả tài liệu (sinh viên, học viên) ## 1. Quy định chung – Xuất trình Thẻ...
+    [3] quy-dinh-muon-tra-sinh-vien (0.814): ượn. Khi trả tài liệu, Thư viện kiểm tra nếu đầy đủ sẽ hoàn trả lại tiền đặt cọc. ### 2.2 ...
+  Agent: Dựa trên tài liệu được cung cấp, số lượng tài liệu được mượn về nhà được quy định cụ thể theo từng đối tượng như sau: * **Đối với bạn đọc là Sinh viên**: * Tiếng Việt: tối đa **05 tài liệu** [1]. * Tiếng Anh (Tham khảo): tối đa **03 tài liệu** [1]. * **Đối với học viên Vừa làm vừa học, Học viên cao học, Nghiên cứu sinh**: Tài liệu không đề cập đến số lượng tài liệu tối đa được mượn về nhà, chỉ quy định phải đặt cọc tiền gấp đôi giá trị tài liệu mượn [1]. * **Đối với các đối tượng khác (như Cán bộ, Giảng viên)**: Không có thông tin trong tài liệu.
+------------------------------------------------------------------------------
+Q4: Khi vào phòng đọc được mang theo những gì?
+  Filter: None
+  Điểm: theo doc_id=2/2 · theo nội dung=2/2
+    [1] phuc-vu-phong-doc (0.809): # Phục vụ phòng đọc Người sử dụng thư viện xuất trình thẻ Cán bộ/ Giảng viên/ Sinh viên. C...
+    [2] noi-quy-thu-vien (0.754): c sách tại chỗ tại các Phòng đọc. - Được trợ giúp tra cứu và hướng dẫn sử dụng Thư viện. -...
+    [3] phuc-vu-phong-doc (0.739): hiết về tài liệu. Xem sơ đồ bố trí kho sách; Xem bảng chỉ dẫn ở đầu mỗi dãy kệ sách để xác...
+  Agent: Khi vào phòng đọc, người sử dụng thư viện chỉ được mang theo các vật dụng sau: - Máy tính cá nhân [1], [2] - Sách, tập vở và dụng cụ học tập [1], [2]
+------------------------------------------------------------------------------
+Q5: Muốn kiểm tra tỉ lệ trùng lặp cho khóa luận, đồ án thì dùng dịch vụ nào?
+  Filter: None
+  Điểm: theo doc_id=2/2 · theo nội dung=2/2
+    [1] dich-vu-quet-trung-lap (0.852): # Dịch vụ quét trùng lặp ## Dịch vụ Xác định tỉ lệ trùng lắp nội dung trong các Sản phẩm h...
+    [2] dich-vu-quet-trung-lap (0.696): ăn Turnitin. ## Hỗ trợ Người dùng trong trường: Sinh viên, GV-CB CNV được tích hợp trên Hệ...
+    [3] quy-dinh-muon-tra-sinh-vien (0.632): ượn. Khi trả tài liệu, Thư viện kiểm tra nếu đầy đủ sẽ hoàn trả lại tiền đặt cọc. ### 2.2 ...
+  Agent: Để kiểm tra tỉ lệ trùng lặp cho khóa luận, đồ án tốt nghiệp, bạn sử dụng **Dịch vụ quét trùng lặp** (xác định tỉ lệ trùng lắp nội dung bằng phần mềm chống đạo văn Turnitin) [1].
+------------------------------------------------------------------------------
+TỔNG: theo doc_id=10/10 · theo nội dung=10/10 · top-3 có đáp án: 5/5
+
+A/B METADATA FILTER — Q3: Mỗi bạn đọc được mượn tối đa bao nhiêu tài liệu về nhà?
+  KHÔNG filter -> điểm nội dung 2/2
+    [1] quy-dinh-muon-tra-sinh-vien (0.847): khi mượn. ## 2. Số lượng tài liệu được mượn ### 2.1 Tài liệu mượn về nhà – Đối với bạn đọc...
+    [2] phuc-vu-muon-tra-tai-lieu (0.842): ủa tài liệụ; chọn và mang tài liệu ra quầy thủ thư để làm thủ tục ghi mượn. ## Mượn đọc tạ...
+    [3] quy-dinh-muon-tra-can-bo-giang-vien (0.832): # Quy định mượn - trả tài liệu (cán bộ, giảng viên) ## 1. Quy định chung – Xuất trình Thẻ ...
+    Agent: Số lượng tài liệu được mượn về nhà tối đa tùy thuộc vào từng đối tượng bạn đọc như sau: - **Đối với Sinh viên:** Tối đa **8 cuốn** (gồm 05 cuốn Tiếng Việt và 03 cuốn Ngoại văn/Tiếng Anh tham khảo) [1], [2]. - **Đối với Cán bộ, Giảng viên:** Tối đa **10 tài liệu** [3]. - **Đối với Học viên Vừa làm vừa học, Học viên cao học, Nghiên cứu sinh:** Tài liệu không ghi rõ số lượng tối đa cụ thể, chỉ quy định bạn đọc thuộc đối tượng này phải đặt cọc tiền gấp đôi giá trị tài liệu mượn về nhà [1].
+  CÓ filter {'audience': 'student'} -> điểm nội dung 2/2
+    [1] quy-dinh-muon-tra-sinh-vien (0.847): khi mượn. ## 2. Số lượng tài liệu được mượn ### 2.1 Tài liệu mượn về nhà – Đối với bạn đọc...
+    [2] quy-dinh-muon-tra-sinh-vien (0.818): # Quy định mượn - trả tài liệu (sinh viên, học viên) ## 1. Quy định chung – Xuất trình Thẻ...
+    [3] quy-dinh-muon-tra-sinh-vien (0.814): ượn. Khi trả tài liệu, Thư viện kiểm tra nếu đầy đủ sẽ hoàn trả lại tiền đặt cọc. ### 2.2 ...
+    Agent: Theo quy định trong tài liệu, số lượng tài liệu mượn về nhà được quy định cụ thể theo từng đối tượng bạn đọc như sau: * **Đối với bạn đọc là Sinh viên:** * Tài liệu tiếng Việt: Tối đa 05 tài liệu [1]. * Tài liệu tiếng Anh (Tham khảo): Tối đa 03 tài liệu [1]. * **Đối với Học viên Vừa làm vừa học, Học viên cao học, Nghiên cứu sinh:** Phải đặt cọc tiền gấp đôi giá trị tài liệu mượn về nhà [1]. Tuy nhiên, số lượng tài liệu tối đa được mượn cho đối tượng này không được tìm thấy trong tài liệu. * **Đối với các đối tượng khác (như cán bộ, giảng viên):** Trong tài liệu được cung cấp không có thông tin.
+------------------------------------------------------------------------------
+
+ĐỘ TƯƠNG TỰ COSINE — 5 CẶP CÂU (dự đoán ghi trước khi chạy)
+Cặp 1: sim = 0.918 | dự đoán: cao | Diễn đạt lại cùng một ý bằng từ vựng khác hẳn
+    A: Sinh viên được mượn tối đa bao nhiêu tài liệu về nhà?
+    B: Hạn mức mang tài liệu thư viện ra ngoài của người học là bao nhiêu?
+Cặp 2: sim = 0.743 | dự đoán: cao | Cùng chủ đề mượn - trả nhưng hỏi hai thông tin khác nhau
+    A: Thời hạn mượn tài liệu về nhà là bao lâu?
+    B: Mức phạt khi trả tài liệu trễ hạn là bao nhiêu?
+Cặp 3: sim = 0.834 | dự đoán: cao | Bẫy audience: điểm càng cao thì embedding càng không tách được đối tượng, buộc phải dùng metadata filter
+    A: Cán bộ, giảng viên được mượn 10 tài liệu.
+    B: Sinh viên được mượn 05 tài liệu tiếng Việt.
+Cặp 4: sim = 0.854 | dự đoán: cao | Kiểm tra khả năng đa ngữ (Việt - Anh) của mô hình embedding
+    A: Quy định sử dụng máy tính và Internet trong thư viện.
+    B: Rules for using library computers and the Internet.
+Cặp 5: sim = 0.501 | dự đoán: thấp | Hai miền chủ đề tách rời, dùng làm mốc dưới
+    A: Dịch vụ quét trùng lặp Turnitin cho khóa luận tốt nghiệp.
+    B: Lịch thi đấu vòng 5 giải bóng đá ngoại hạng Anh.
